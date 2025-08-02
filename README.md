@@ -10,7 +10,6 @@ This project generates dummy sales data and provides a simple API to interact wi
 - [Interacting with the API](#interacting-with-the-api)
 - [Claude Desktop App Integration](#claude-desktop-app-integration)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Structure
@@ -105,9 +104,6 @@ The `mcp_data_gen.py` script exposes the following API endpoints:
 -   **DELETE `/products/{name}`**: Deletes a product by name.
 -   **POST `/users`**: Creates a new user.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request.
 
 ## License
 
