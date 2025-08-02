@@ -45,7 +45,7 @@ The project is organized as follows:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/mohana9985/MCP_Dummy-Sales_Data_Generation.git
     cd dummy-sales-data
     ```
 
@@ -84,7 +84,7 @@ After installing the Claude Desktop App, you can configure it to interact with t
     ```
 2.  **Install the MCP configuration:**
     ```bash
-    mcp install <filename>
+    mcp install mcp_dummy_gen.py
     ```
     *Note: You will need to replace `<filename>` with the actual configuration file for this project.*
 
