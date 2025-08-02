@@ -1,0 +1,38 @@
+# Python cache and bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environments
+env/
+venv/
+.env
+.venv
+
+# Pip log files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test and coverage reports
+.tox/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# Log files
+*.log
+
+# Git repository files
+.git
+
+# Type checking cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Hypothesis testing cache
+.hypothesis/

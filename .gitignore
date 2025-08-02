@@ -1,0 +1,40 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon
+
+# Thumbnails
+._*
+
+# macOS metadata
+.Spotlight-V100
+.Trashes
+
+# macOS Finder folder settings
+Desktop.ini
+
+# macOS Trash
+.Trash-*/
+
+# macOS Quick Look files
+*.qlgenerator
+
+# Files created by macOS
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# VSCode and Xcode
+.vscode/
+xcuserdata/
+*.xcworkspace
+*.xcuserstate
+
+# General node, Python, etc. (optional, if you use these)
+node_modules/
+__pycache__/
+*.pyc
