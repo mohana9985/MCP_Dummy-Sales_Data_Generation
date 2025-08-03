@@ -62,7 +62,7 @@ The project is organized as follows:
     - Open Docker Desktop.
     - Run the following command in your terminal:
       ```bash
-      docker-compose up --build
+      docker-compose up -d
       ```
     - This will start the Python API server, a MySQL container, and a phpMyAdmin container. You can access phpMyAdmin at `http://localhost:8080`.
 
