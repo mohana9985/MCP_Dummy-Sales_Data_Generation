@@ -20,7 +20,7 @@ services:
     restart: always
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: arm64v8/phpmyadmin
     container_name: phpmyadmin
     restart: always
     environment:

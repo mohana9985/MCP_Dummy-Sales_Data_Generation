@@ -1,3 +1,5 @@
+import os 
+from dotenv import load_dotenv
 from utilis import get_mysql_connection
 from mcp.server.fastmcp import FastMCP
 from typing import Literal
@@ -188,7 +190,7 @@ def delete_products(name: str) -> Literal["success", "failed"]:
         connection= get_mysql_connection()
         cursor= connection.cursor()
         delete_product_query = "DELETE FROM products WHERE name= %s;"
-        delete_product= cursor.execute(delete_product_query, (name))
+        delete_product= cursor.execute(delete_product_query, (name,))
         connection.commit()
     
     except Exception as e:
@@ -243,4 +245,7 @@ def create_users(
 
 
 if __name__ == '__main__':
-    mcp.run(transport='stdio')
+    load_dotenv()
+    host = os.getenv('HOST')
+    port = int(os.getenv('PORT'))
+    mcp.run(mcp.streamable_http_app, host=host, port=port)
