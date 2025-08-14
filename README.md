@@ -56,6 +56,8 @@ The project is organized as follows:
       MYSQL_USER=qtgenai
       MYSQL_PASSWORD=qtgenai
       MYSQL_DATABASE=genaicommerce
+      HOST= ""
+      PORT= 
       ```
 
 3.  **Start the services using Docker Desktop:**
