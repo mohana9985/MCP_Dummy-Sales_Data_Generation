@@ -10,7 +10,6 @@ This project generates dummy sales data and provides a simple API to interact wi
 - [Interacting with the API](#interacting-with-the-api)
 - [Claude Desktop App Integration](#claude-desktop-app-integration)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Structure
@@ -46,7 +45,7 @@ The project is organized as follows:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/mohana9985/MCP_Dummy-Sales_Data_Generation.git
     cd dummy-sales-data
     ```
 
@@ -63,7 +62,7 @@ The project is organized as follows:
     - Open Docker Desktop.
     - Run the following command in your terminal:
       ```bash
-      docker-compose up --build
+      docker-compose up -d
       ```
     - This will start the Python API server, a MySQL container, and a phpMyAdmin container. You can access phpMyAdmin at `http://localhost:8080`.
 
@@ -85,7 +84,7 @@ After installing the Claude Desktop App, you can configure it to interact with t
     ```
 2.  **Install the MCP configuration:**
     ```bash
-    mcp install <filename>
+    mcp install mcp_dummy_gen.py
     ```
     *Note: You will need to replace `<filename>` with the actual configuration file for this project.*
 
@@ -105,9 +104,6 @@ The `mcp_data_gen.py` script exposes the following API endpoints:
 -   **DELETE `/products/{name}`**: Deletes a product by name.
 -   **POST `/users`**: Creates a new user.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request.
 
 ## License
 
