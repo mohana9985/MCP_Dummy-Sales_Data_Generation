@@ -56,12 +56,11 @@ The project is organized as follows:
       MYSQL_USER=qtgenai
       MYSQL_PASSWORD=qtgenai
       MYSQL_DATABASE=genaicommerce
-      HOST= ""
-      PORT= 
       ```
 
 3.  **Start the services using Docker Desktop:**
     - Open Docker Desktop.
+    - **Note:** The `docker-compose.yml` uses the `arm64v8/phpmyadmin` image which is specific to Mac ARM64 architecture. If you are on a different architecture (like Windows or a non-ARM Mac), you will need to use the `phpmyadmin/phpmyadmin` image instead.
     - Run the following command in your terminal:
       ```bash
       docker-compose up -d
