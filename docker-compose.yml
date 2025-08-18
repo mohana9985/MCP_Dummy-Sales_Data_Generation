@@ -20,7 +20,10 @@ services:
     restart: always
 
   phpmyadmin:
+    #For MAC ARM64 architecture
     image: arm64v8/phpmyadmin
+    #For Windows or other architecture:
+    #image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
     restart: always
     environment:
